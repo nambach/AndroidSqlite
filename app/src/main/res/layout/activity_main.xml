@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:columnCount="5"
+        android:rowCount="1">
+        <EditText
+            android:layout_column="0"
+            android:layout_row="0"
+            android:layout_columnSpan="4"
+            android:layout_margin="10sp"
+            android:layout_gravity="fill_horizontal"
+            android:id="@+id/editSearch"
+            android:inputType="text"
+            android:hint="Input to search" />
+        <Button
+            android:id="@+id/btnNew"
+            android:layout_margin="10sp"
+            android:layout_column="4"
+            android:layout_row="0"
+            android:text="New"/>
+    </GridLayout>
+    <ListView
+        android:id="@+id/userList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <requestFocus/>
+    </ListView>
+</LinearLayout>
